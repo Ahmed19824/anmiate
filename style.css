@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: rgb(18, 17, 24);
+    margin-top: 40px;
+
+}
+
+.car01,
+.car02,
+.car03,
+.car04 {
+    width: 100%;
+    height: 150px;
+}
+
+
+.road01,
+.road02 {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.road01 .road-1,
+.road-3 {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.road02 .road-2,
+.road-4 {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.road01 .car1,
+.car3 {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 1px;
+
+    border-radius: 8px;
+
+}
+
+.road02 .car2,
+.car4 {
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 1px;
+    border-radius: 8px;
+
+}
+
+
+.road01 .car1 {
+    animation-name: change1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes change1 {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: 94%;
+    }
+
+
+}
+
+
+.road02 .car2 {
+    animation-name: change2;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change2 {
+    0% {
+        right: 1px;
+    }
+
+    100% {
+        right: 94%;
+    }
+
+
+}
+
+.road01 .car3 {
+    animation-name: change3;
+    animation-delay: 10S;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change3 {
+    0% {
+        left: 5px;
+    }
+
+    100% {
+        left: 93%;
+    }
+
+
+}
+
+.road02 .car4 {
+    animation-name: change4;
+    animation-delay: 15s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change4 {
+    0% {
+        right: 1px;
+    }
+
+    100% {
+        right: 94%;
+    }
+
+
+}
